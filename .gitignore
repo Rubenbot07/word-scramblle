@@ -1,0 +1,15 @@
+.vscode/
+.idea/
+
+*.log
+*.tmp
+*.swp
+
+
+*.bak
+*.swp
+
+.DS_Store      # Para macOS
+Thumbs.db      # Para Windows
+
+.gitmodules
