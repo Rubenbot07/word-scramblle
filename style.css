@@ -54,7 +54,7 @@ h1 {
     justify-content: space-around;
     width: 90%;
     margin: 0 auto;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .tries-container {
@@ -124,4 +124,8 @@ button {
     -webkit-box-shadow: 0px 6px 0px -1px #672171;
     -moz-box-shadow: 0px 6px 0px -1px #672171;
     box-shadow: 0px 6px 0px -1px #672171;
+}
+
+.tries-counter-item--active {
+    background: linear-gradient(to right, #7429C6, #C951E7);
 }
