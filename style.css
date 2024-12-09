@@ -19,7 +19,6 @@ body {
     background: linear-gradient(to right, #030616, #1f2839);
     width: 90%;
     min-width: 280px;
-    max-width: 500px;
     border-radius: 12px;
     padding-block: 20px;
 }
@@ -107,6 +106,10 @@ h1 {
     font-size: 1.5rem;
     font-weight: bolder;
 }
+.letter-input:focus {
+    border: 2px solid #C951E7;
+    outline: none;
+}
 
 .buttons-container {
     display: flex;
@@ -150,6 +153,10 @@ button {
 }
 
 @media (min-width: 500px) {
+    .game-container, .modal {
+        width: 50%;
+        max-width: 400px;
+    }
     .word-container {
         font-size: 2.5rem;
     }
