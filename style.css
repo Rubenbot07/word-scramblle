@@ -8,7 +8,7 @@ body {
     font-family: "Outfit", sans-serif;
 }
 
-.game-container {
+.game-container, .modal {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -17,7 +17,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(to right, #030616, #1f2839);
-    width: 50%;
+    width: 90%;
     min-width: 280px;
     max-width: 500px;
     border-radius: 12px;
@@ -34,7 +34,7 @@ h1 {
 .word-container {
     display: flex;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding-block: 0.5rem;
     font-weight: normal;
     color: #97A3B6;
@@ -49,9 +49,11 @@ h1 {
 }
 .tries-mistakes-container {
     display: flex;
-    color: #4A5567;
-    font-weight: bolder;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-weight: bolder;
+    color: #4A5567;
     width: 90%;
     margin: 0 auto;
     font-size: 1rem;
@@ -87,15 +89,16 @@ h1 {
 .word-input-container {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     gap: 10px;
-    width: 100%;
+    width: 90%;
     padding-block: 30px;
     flex-wrap: wrap;
 }
 
 .letter-input {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     border-radius: 5px;
     background-color: transparent;
@@ -113,7 +116,8 @@ h1 {
 }
 
 button {
-    padding: 10px 40px;
+    padding-inline: 20px;
+    padding-block: 10px;
     border-radius: 10px;
     border: none;
     background-color: #C951E7;
@@ -128,4 +132,32 @@ button {
 
 .tries-counter-item--active {
     background: linear-gradient(to right, #7429C6, #C951E7);
+}
+
+.restart-button {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.modal-message {
+    text-align: center;
+    color: #97A3B6;
+    font-size: 1.5rem;
+}
+
+.inactive {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .word-container {
+        font-size: 2.5rem;
+    }
+    .letter-input {
+        width: 40px;
+        height: 40px;
+    }
+    button {
+        padding-inline: 40px;
+    }
 }
